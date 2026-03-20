@@ -64,11 +64,7 @@ export default function ExpandingCards() {
           <div
             key={panel.id}
             onClick={() => setActiveId(panel.id)}
-            // cn() merges all these classes cleanly.
-            // The flex value is what drives the expand/collapse animation.
-            // flex-[5] = this panel takes 5x the space of others
-            // flex-[0.5] = this panel is very narrow (collapsed)
-            // transition-all duration-700 animates between the two states
+ 
             className={cn(
               'relative m-2 cursor-pointer overflow-hidden rounded-[30px]',
               'bg-cover bg-center',
